@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+.search_top {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.599), rgba(0, 0, 0, 0.599)),
+    url(./public/wall_design.png) center 20% / cover no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 46px;
+  color: white;
+  
+}
+.search_top a {
+  text-decoration: none;
+  color: white;
+  height: 30%;
+  font-weight: bold;
+}
+.search_top h1 {
+  font-size: 4dvw;
+}
+.search_main {
+  /* height: 100dvh; */
+  position: relative;
+}
+.search_bottom {
+  height: 70%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+.explore_icon{
+  padding-top: 20%;
+}
+.input_search{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+}
+.input_search input{
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+}
+.input_search button{
+  padding: 10px 20px;
+  background: #F9FAFB;
+  color: brown;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.card{
+  display: flex;
+  margin-top: 40px;
+  padding: 25px;
+  min-width: 890px;
+}
+.left img{
+  width: 160px;
+  height: 230px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+.right > *{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.add_icon{
+  display: flex;
+  align-items: center;
+}
+.add_icon img{
+  background: black;
+  border-radius: 50%;
+}
+.explore_icon h3{
+  color: #DFDDDD;
+}
