@@ -9,8 +9,7 @@ let wishListArr = [];
 const localData = localStorage.getItem('wishItems');
 if (localData) {
   const info = JSON.parse(localData);
-  wishListArr=[...info]
-  console.log(info)
+  wishListArr = [...info];
 }
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -29,7 +28,6 @@ form.addEventListener('submit', e => {
           `https://www.omdbapi.com/?apikey=92a425b3&i=${ele.imdbID}`,
         );
         const data = await response.json();
-        console.log(data);
         const mainE = document.createElement('main');
         mainE.className = 'card';
         mainE.innerHTML = `<section class="left">
@@ -66,13 +64,11 @@ form.addEventListener('submit', e => {
         singleWish.addEventListener('click', e => {
           e.preventDefault();
           wishListArr.push(data);
-          console.log(wishListArr);
         });
 
         grabBottom.appendChild(mainE);
       });
     } catch (err) {
-      // console.log(err)
       grabBottom.innerHTML = `
       <div class="explore_icon">
       <h3>Unable to find what you’re looking for. Please try another search.</h3>
